@@ -10,13 +10,23 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) IBOutlet UIButton *selectLanguageBt;
+@property (strong, nonatomic) IBOutlet UIButton *loginBt;
+@property (strong, nonatomic) IBOutlet UIButton *resgistBt;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _loginBt.layer.cornerRadius = 5;
+    _resgistBt.layer.cornerRadius = 5;
+}
+
+- (IBAction)selectLanguage {
+    
 }
 
 - (void)didReceiveMemoryWarning {
